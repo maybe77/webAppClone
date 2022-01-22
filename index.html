@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script src="https://kit.fontawesome.com/4d3ec6d90f.js" crossorigin="anonymous"></script>
+    <script src="./src/js/clock.js" defer></script>
+    <script src="./src/js/background.js" defer></script>
+    <script src="./src/js/weather.js" defer></script>
+    <script src="./src/js/logAndSearch.js" defer></script>
+    <script src="./src/js/todos.js" defer></script>
+    <title>DogWebSearcher</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="clock">
+                <span class="time"></span>
+                <span class="date"></sp>
+            </div>
+            <div class="weather">
+            </div>
+        </header>
+        <div class="name hidden">
+        </div>
+        <aside class="menuWrap hidden_sideMenu">
+            <div class="logout">Log out</div>
+            <ul class="menu">
+                <li>My profile</li>
+                <li>E-mail</li>
+                <li>Clouds</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </aside>       
+        <section class="container">
+            <form type="submit" class="typePlace" autocomplete="off">
+                <input type="text" name="input" id="input" placeholder="Enter your name" required/>
+                <button class="hidden"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="searchedList">최근검색어
+            </ul>
+        </section>
+        <div class="todos hidden_bar">
+            <div class="mobileBar"><img src="./src/img/menu_01.png" alt="바_메뉴"></i></div>
+            <div class="todoContent">
+                <form class="typeTodo">
+                    <input type="text" name="typeTodo" id="typeTodo" placeholder="Write To-do" autocomplete="off" required />
+                </form>
+                <ul class="todoList">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
